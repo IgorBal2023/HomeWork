@@ -1,0 +1,10 @@
+#abzac3 {
+    color: green;
+    text-transform: capitalize;
+}
+p+p {
+    text-transform: lowercase;
+}
+p {
+    text-transform: uppercase;
+}

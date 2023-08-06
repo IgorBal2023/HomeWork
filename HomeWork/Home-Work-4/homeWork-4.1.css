@@ -1,0 +1,166 @@
+/* первое задание с картами */
+.background {
+    width: 600px;
+    height: 600px;
+    background-color: #0d5825;
+    margin: 0px auto;
+    position: relative;
+}
+
+blockquote {
+    font-size: 25px;
+    color: white;
+    line-height: 2px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+.card1 img, .card2 img, .card3 img {
+    width: 150px;       
+}
+.card1 {
+    position: absolute;
+    bottom: 95px;
+    left: 185px;
+    transform: rotate(-25deg);  
+}
+.card1:hover {
+    bottom: 135px;
+    transition: bottom 2s ease 0.25s;
+}
+.card2 {
+    position: absolute;
+    bottom: 90px;
+    left: 235px;
+    transform: rotate(-9deg); 
+}
+.card2:hover {
+    bottom: 130px;
+    transition: bottom 2s ease 0.25s;
+}
+.card3 {
+    position: absolute;
+    bottom: 75px;
+    left: 280px;
+    transform: rotate(7.5deg);     
+}
+.card3:hover {
+    bottom: 115px;
+    transition: bottom 2s ease 0.25s;
+}
+
+/* второе задание */
+.homeWork-2 {
+    width: 500px;
+    height: 500px;  
+    background-color: bisque;
+    margin: 0 auto;
+    position: relative;
+}
+.cub1 {
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    position: absolute;
+    top: 140px;
+    left: 140px;  
+}
+.cub2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 1;
+}
+.cub3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 260px;
+    left: 260px;    
+}
+
+/* третье задание на анимацию */
+.background3 {
+    background-color: black; 
+    height: 600px;
+    position: relative;
+}
+
+.animationBlock {
+    width: 400px;
+    height: 400px;    
+    background-color: white;
+    position: absolute; 
+    bottom: 100px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.animationSquare {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute; 
+    left: 10px;  
+    animation: runSquare 6s ease infinite;
+    /* animation: runSquare 8s ease 0s infinite, bigRunSquare 8s ease 0s infinite;        */
+}                                                                                       /* срабатывает только последний ключ, а не по циклу */
+
+/* создаем анимацию */
+/* @keyframes runSquare {
+    0%{top: 0px; left: 10px;}
+    12.5%{background-color: blueviolet;}
+    25%{top: 260px;left: 10px; background-color: blue;}
+    37.5%{background-color: darkslateblue;}
+    50%{top: 260px; left: 240px; background-color: green; }
+    62.5%{background-color: yellowgreen;}
+    75%{top: 10px; left: 240px;; background-color: yellow;}
+    87.5%{background-color: orange;}
+    100%{top: 0px;left: 10px;}
+}
+
+/* второй проход с измененным значением top */
+/* @keyframes bigRunSquare {
+    0%{top: 0px; left: 10px;}
+    12.5%{background-color: blueviolet;}
+    25%{top: 270px;left: 10px; background-color: blue;}
+    37.5%{background-color: darkslateblue;}
+    50%{top: 270px; left: 240px; background-color: green; }
+    62.5%{background-color: yellowgreen;}
+    75%{top: 0px; left: 240px;; background-color: yellow;}
+    87.5%{background-color: orange;}
+    100%{top: 0px;left: 10px;}
+} 
+/* Анимации по очереди не сработали, сработал только последний ключ, поэтому все переписываю в один ключ */
+
+@keyframes runSquare {
+    0%{top: 0px; left: 10px;}
+    6.25%{background-color: blueviolet;}
+    12.5%{top: 260px;left: 10px; background-color: blue;}
+    18.75%{background-color: darkslateblue;}
+    25%{top: 260px; left: 240px; background-color: green; }
+    31.25%{background-color: yellowgreen;}
+    37.5%{top: 10px; left: 240px;; background-color: yellow;}
+    43.75%{background-color: orange;}
+    50%{top: 0px;left: 10px;}
+
+/* второй проход с измененным значением top */
+
+    50.001%{top: 0px; left: 10px;}
+    56.25%{background-color: blueviolet;}
+    62.5%{top: 270px;left: 10px; background-color: blue;}
+    68.75%{background-color: darkslateblue;}
+    75%{top: 270px; left: 240px; background-color: green; }
+   81.25%{background-color: yellowgreen;}
+    87.5%{top: 0px; left: 240px;; background-color: yellow;}
+    93.75%{background-color: orange;}
+    100%{top: 0px;left: 10px;}
+}

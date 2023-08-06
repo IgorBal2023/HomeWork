@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 7</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Контактная информация</legend>
+
+            <label class="fieldset" for="name">Имя <em>*</em></label>
+            <input type="text" id="name"><br>
+            <label class="fieldset" for="e-mail">E-mail</label>
+            <input type="email" id="e-mail"><br>
+            <label class="fieldset" for="tel">Телефон</label>
+            <input type="tel" id="tel"><br>
+            
+            <label for="country">Страна</label>
+            <select name="country" id="country">
+                <option value="">Выберите страну</option>
+                <option value="1">Украина</option>
+                <option value="2">Польша</option>
+                <option value="3">Германия</option>
+                <option value="4">США</option>
+                <option value="5">Франция</option>
+            </select>
+
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+
+       <div class="bottom">
+             <button type="submit">Отправить</button>
+    </div>
+    
+     <div class="chekblock"> 
+   
+    <label class="labelcheck" for="check1">
+    <input type="checkbox" id="check1" class="check" >
+    <span class="check__box"></span> 
+    Первый чекбокс
+             </label><br>
+    <label class="labelcheck" for="check2">
+    <input type="checkbox" id="check2" class="check" >
+    <span class="check__box"></span> 
+     Второй чекбокс
+             </label><br>
+    <label class="labelcheck" for="check3">
+    <input type="checkbox" id="check3" class="check" >
+    <span class="check__box"></span> 
+     Третий чекбокс
+             </label>
+
+     </div>
+
+    </form>
+    
+</body>
+</html>

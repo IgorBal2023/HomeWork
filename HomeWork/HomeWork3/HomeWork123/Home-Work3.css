@@ -1,0 +1,37 @@
+.homework2 {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+    border: 2px dotted red;
+    background-color: green;
+}
+.homework3 {
+    width: 60%;
+    height: auto;
+    font-family:Crimson Text ;
+    margin: 1rem;
+    padding: 10px;
+    float: right;
+    /* background-color: aqua; */
+    font-size: 1.25rem;
+}
+.img1 img {
+    max-width: 20%;
+    height: auto;
+    float: left;
+     margin: 0px 5px -5px -5px; 
+     padding: 5px;
+}
+.img2 img {
+    max-width: 15%;
+    height: auto;
+    float: right;
+    margin: 0px 0px 0px 5px ;
+    padding: 5px;
+    }
+
+   h1 {
+    font-size: 2rem;
+    text-align: center;
+       } 
